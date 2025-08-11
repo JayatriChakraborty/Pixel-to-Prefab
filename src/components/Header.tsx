@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Code2, Github, Twitter } from 'lucide-react';
+import { Code2, Github } from 'lucide-react';
 
 export const Header = () => {
   return (
@@ -25,9 +25,6 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm">
               <Github className="w-4 h-4" />
-            </Button>
-            <Button variant="ghost" size="sm">
-              <Twitter className="w-4 h-4" />
             </Button>
             <Button variant="default" size="sm">
               Get Started

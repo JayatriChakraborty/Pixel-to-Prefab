@@ -50,11 +50,32 @@ export const UploadArea = ({ onFileUpload, onUrlSubmit }: UploadAreaProps) => {
     }
   };
 
-  const handleUrlSubmit = (e: React.FormEvent) => {
+  const handleUrlSubmit = useCallback((e: React.FormEvent) => {
     e.preventDefault();
     if (url.trim()) {
-      onUrlSubmit(url.trim());
-      setUrl('');
+      if (isValidUrl(url.trim())) {
+        onUrlSubmit(url.trim());
+        setUrl('');
+        toast({
+          title: "Design URL submitted!",
+          description: "Starting analysis...",
+        });
+      } else {
+        toast({
+          title: "Invalid URL",
+          description: "Please enter a valid URL",
+          variant: "destructive",
+        });
+      }
+    }
+  }, [url, onUrlSubmit, toast]);
+
+  const isValidUrl = (string: string) => {
+    try {
+      new URL(string);
+      return true;
+    } catch (_) {
+      return false;
     }
   };
 

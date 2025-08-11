@@ -50,24 +50,24 @@ export const AnalysisInterface = ({ designFile, designUrl }: AnalysisInterfacePr
 </html>`,
     react: `import React from 'react';
 
-const LoginCard = () => {
+const DesignComponent = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center p-6">
-      <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">Welcome Back</h1>
-        <p className="text-gray-600 mb-6">Sign in to your account</p>
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100 flex items-center justify-center p-6">
+      <div className="bg-white rounded-2xl shadow-elegant p-8 max-w-md w-full border border-amber-200">
+        <h1 className="text-2xl font-bold text-amber-900 mb-4 font-display">Welcome Back</h1>
+        <p className="text-amber-700 mb-6 font-body">Sign in to your account</p>
         <form className="space-y-4">
           <input 
             type="email" 
             placeholder="Email" 
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-amber-50/50"
           />
           <input 
             type="password" 
             placeholder="Password" 
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 border border-amber-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all bg-amber-50/50"
           />
-          <button className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
+          <button className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-lg font-semibold hover:shadow-glow transition-all">
             Sign In
           </button>
         </form>
@@ -76,7 +76,7 @@ const LoginCard = () => {
   );
 };
 
-export default LoginCard;`,
+export default DesignComponent;`,
     vue: `<template>
   <div class="min-h-screen bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center p-6">
     <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
@@ -121,9 +121,9 @@ export default {
   };
 
   const analysisResults = {
-    colors: ['#8B5CF6', '#3B82F6', '#FFFFFF', '#1F2937', '#6B7280'],
-    fonts: ['Inter', 'Helvetica', 'Arial'],
-    components: ['Card', 'Input', 'Button', 'Gradient Background'],
+    colors: ['#8B4513', '#D2B48C', '#F5F5DC', '#CD853F', '#DEB887'],
+    fonts: ['Inter', 'Playfair Display', 'Open Sans'],
+    components: ['Card', 'Input', 'Button', 'Earth-tone Background'],
     framework: 'Tailwind CSS'
   };
 

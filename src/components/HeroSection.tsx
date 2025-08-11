@@ -4,13 +4,13 @@ import heroImage from "@/assets/hero-bg.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-subtle">
+      <div className="absolute inset-0 bg-gradient-earth opacity-10">
         <img 
           src={heroImage} 
           alt="Design to code transformation" 
-          className="w-full h-full object-cover opacity-5"
+          className="w-full h-full object-cover opacity-15"
         />
       </div>
       
@@ -28,13 +28,13 @@ export const HeroSection = () => {
           <span className="text-sm font-medium text-foreground">Free unlimited design analysis</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold bg-gradient-earth bg-clip-text text-transparent mb-6 leading-tight font-display">
           Transform Designs
           <br />
           Into Perfect Code
         </h1>
 
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed font-body">
           Upload any design and get pixel-perfect frontend code instantly. 
           Trusted by designers worldwide for accurate, production-ready results.
         </p>

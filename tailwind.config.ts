@@ -103,7 +103,12 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-subtle': 'var(--gradient-subtle)'
+				'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-earth': 'var(--gradient-earth)'
+			},
+			fontFamily: {
+				'display': ['Inter', 'system-ui', 'sans-serif'],
+				'body': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
