@@ -17,16 +17,16 @@ export const Header = () => {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="/features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
-            <a href="#examples" className="text-muted-foreground hover:text-foreground transition-colors">Examples</a>
-            <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors">Docs</a>
+            <a href="/examples" className="text-muted-foreground hover:text-foreground transition-colors">Examples</a>
+            <a href="/docs" className="text-muted-foreground hover:text-foreground transition-colors">Docs</a>
           </nav>
 
           {/* Actions */}
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm">
+            <Button variant="ghost" size="sm" onClick={() => window.open('https://github.com', '_blank')}>
               <Github className="w-4 h-4" />
             </Button>
-            <Button variant="default" size="sm">
+            <Button variant="default" size="sm" onClick={() => window.location.href = '/#upload'}>
               Get Started
             </Button>
           </div>

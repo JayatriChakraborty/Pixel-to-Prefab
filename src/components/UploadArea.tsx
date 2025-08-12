@@ -80,7 +80,7 @@ export const UploadArea = ({ onFileUpload, onUrlSubmit }: UploadAreaProps) => {
   };
 
   return (
-    <section className="py-20 px-6">
+    <section id="upload" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Upload Your Design</h2>

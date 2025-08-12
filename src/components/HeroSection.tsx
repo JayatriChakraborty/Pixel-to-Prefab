@@ -40,11 +40,11 @@ export const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button variant="hero" size="lg" className="text-base px-8 py-3">
+          <Button variant="hero" size="lg" className="text-base px-8 py-3" onClick={() => document.getElementById('upload')?.scrollIntoView({ behavior: 'smooth' })}>
             <Upload className="w-5 h-5" />
             Start Converting Designs
           </Button>
-          <Button variant="ghost" size="lg" className="text-base">
+          <Button variant="ghost" size="lg" className="text-base" onClick={() => window.location.href = '/examples'}>
             <Code2 className="w-5 h-5" />
             View Sample Output
           </Button>

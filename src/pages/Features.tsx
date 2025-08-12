@@ -93,10 +93,10 @@ const Features = () => {
             From design upload to production-ready code in seconds. All features are completely free with unlimited usage.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-purple-900">
+            <Button size="lg" variant="secondary" className="text-purple-900" onClick={() => window.location.href = '/'}>
               Try It Now
             </Button>
-            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10" onClick={() => window.location.href = '/examples'}>
               View Examples
             </Button>
           </div>
@@ -226,7 +226,7 @@ const Features = () => {
           <p className="text-xl text-purple-100 mb-8">
             Join thousands of designers and developers who save hours every day
           </p>
-          <Button size="lg" variant="secondary" className="text-purple-900">
+          <Button size="lg" variant="secondary" className="text-purple-900" onClick={() => window.location.href = '/'}>
             Start Converting Now
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
