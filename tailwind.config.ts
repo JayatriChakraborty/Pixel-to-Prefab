@@ -104,7 +104,7 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-subtle': 'var(--gradient-subtle)',
-				'gradient-earth': 'var(--gradient-earth)'
+				'gradient-hero': 'var(--gradient-hero)'
 			},
 			fontFamily: {
 				'display': ['Inter', 'system-ui', 'sans-serif'],

@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Copy, Check, Download, Eye, Code, Palette, Type, Layout, Upload } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { LivePreview } from '@/components/LivePreview';
 
 interface AnalysisInterfaceProps {
   designFile?: File;
@@ -302,14 +303,11 @@ export default {
 
             {/* Actions */}
             <div className="mt-6 flex gap-4 justify-center">
-              <Button variant="hero" size="lg">
+              <Button variant="default" size="lg" onClick={() => window.location.reload()}>
                 <Upload className="w-5 h-5" />
                 Analyze Another Design
               </Button>
-              <Button variant="outline" size="lg">
-                <Eye className="w-5 h-5" />
-                Preview Live Code
-              </Button>
+              <LivePreview code={generatedCode[activeTab]} framework={activeTab} />
             </div>
           </div>
         </div>
