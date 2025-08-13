@@ -128,7 +128,7 @@ const Examples = () => {
                         <Eye className="w-4 h-4" />
                         View Code
                       </Button>
-                      <Button size="sm" variant="outline" className="border-white/30 text-white hover:bg-white/10" onClick={() => handleCopyCode(example.title)}>
+                      <Button size="sm" variant="glass" onClick={() => handleCopyCode(example.title)}>
                         <Copy className="w-4 h-4" />
                       </Button>
                     </div>
@@ -217,7 +217,7 @@ const Examples = () => {
               <div className="bg-background border rounded-lg p-6">
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-sm font-medium">Generated Code</span>
-                  <Button size="sm" variant="outline">
+                  <Button size="sm" variant="outline" className="text-foreground border-border hover:bg-accent">
                     <ExternalLink className="w-4 h-4" />
                   </Button>
                 </div>
